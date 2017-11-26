@@ -1,0 +1,47 @@
+@import "common";
+@import "palette";
+
+.app-wrap {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-header {
+    background-color: $primary-color;
+    height: 80px;
+    border-bottom: lighten(lightgreen, 10%);
+    flex-shrink: 0;
+}
+
+.content {
+    background-color: $primary-color-light;
+    line-height: 1.8;
+    padding: 16px;
+    -webkit-font-smoothing: antialiased;
+    color: $primary-text-color;
+    overflow-y: scroll;
+    flex-grow: 1;
+}
+
+.app-footer {
+    height: 80px;
+    background-color: $primary-color;
+    border-top: 1px solid #e6e6e6;
+    flex-shrink: 0;
+}
+.hero {
+    padding: 80px;
+    .btn {
+        width: 100px;
+        height: 40px;
+        margin: 20px auto;
+        background-color: $accent-color;
+
+        &:hover {
+            background-color: lighten(lightgreen, 10%);
+            cursor: pointer;
+        }
+    }
+
+}
