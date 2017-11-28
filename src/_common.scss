@@ -11,3 +11,8 @@ a {
     display: flex;
     transition: all .3s;
 }
+
+// 添加padding和border时，不会影响盒子的大小
+* {
+    box-sizing: border-box;
+}
