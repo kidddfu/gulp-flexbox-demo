@@ -8,3 +8,7 @@ A responsive website by gulp .
 * gulp-autoprefixer 浏览器兼容
 * gulp-minify-css CSS压缩
 * gulp-imagemin 图片资源压缩
+*********************************************
+> 17.11.29半夜三点3th commit
+* gulp-wrap 更改了网站结构，增加了复用性
+* browser-sync  项目自动化，3000端口
