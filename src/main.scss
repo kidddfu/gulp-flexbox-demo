@@ -66,24 +66,53 @@
     }
 }
 
-
-
-
-
-
-
-.hero {
-    padding: 80px;
-    .btn {
-        width: 100px;
-        height: 40px;
-        margin: 20px auto;
-        background-color: $accent-color;
-
+.sidebar {
+    display: none;
+    width: 22%;
+    background-color: $primary-color;
+    a.active {
+        color :#fff;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+        margin: 0;
+        text-align: center;
+        padding: 20px;
+        color: $primary-color-text;
+        border-bottom: 2px solid #fff59d;
+    }
+    
+    a {
+        display: flex;
+        padding: 20px;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.5);
         &:hover {
-            background-color: lighten(lightgreen, 10%);
-            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        i {
+            color: wheat;
+            text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            margin-right: 10px;
         }
     }
-
 }
+
+// 媒体查询开始
+@media (min-width: 800px){
+    .app-wrap {
+        flex-direction: row;
+    }
+    .app-header, .app-footer {
+        display: none;
+    }
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+    }
+    
+}
+
+
